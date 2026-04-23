@@ -1,0 +1,50 @@
+env = "dev"
+theme = "light"
+lock_threshold = 5
+lock_minutes = 10
+
+[db]
+path = "data/neuropilot_app.db"
+
+[data]
+dir = "data"
+
+[log]
+level = "INFO"
+file = "data/logs/neuropilot.log"
+rotation = "10 MB"
+retention = "14 days"
+
+[eeg]
+channels = 8
+sample_rate = 250
+transport = "demo"
+serial_port = "COM3"
+serial_baud = 115200
+bluetooth_address = ""
+bluetooth_port = 1
+tcp_host = "192.168.1.100"
+tcp_port = 4000
+udp_host = "0.0.0.0"
+udp_port = 4001
+lsl_stream_name = "NeuroPilot"
+playback_file = ""
+
+[device]
+transport = "serial"
+serial_port = "COM4"
+serial_baud = 9600
+bluetooth_address = ""
+bluetooth_port = 1
+tcp_host = "192.168.1.100"
+tcp_port = 5000
+udp_host = "192.168.1.100"
+udp_port = 5001
+
+[paradigm]
+fix_duration_ms = 1000
+cue_duration_ms = 500
+imagery_duration_ms = 4000
+rest_duration_ms = 2000
+iti_duration_ms = 1000
+trials_per_run = 20

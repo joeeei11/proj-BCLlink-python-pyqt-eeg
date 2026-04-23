@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# 虚拟环境
+.venv/
+venv/
+env/
+
+# 数据（勿入 git）
+data/
+*.db
+*.db-shm
+*.db-wal
+*.bak
+
+# 模型文件
+*.pkl
+*.joblib
+*.h5
+*.onnx
+
+# 配置覆盖
+config/local.toml
+.env
+.env.*
+!.env.example
+
+# IDE
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 日志
+logs/
+*.log
+
+# 测试覆盖率
+.coverage
+htmlcov/
+.pytest_cache/
+
+# mypy
+.mypy_cache/
+
+# ruff
+.ruff_cache/
+
+# pre-commit
+.pre-commit-hooks.yaml
