@@ -60,3 +60,11 @@ htmlcov/
 
 # pre-commit
 .pre-commit-hooks.yaml
+
+# Private assistant/workflow files
+.claude/
+.lingma/
+.spec-workflow/
+CLAUDE.md
+NeuroPilot_Source_Code.txt
+tasks/
